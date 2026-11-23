@@ -38,6 +38,8 @@ cp -r revisar-pr ~/.claude/skills/
 
 Para usar só em um projeto, copie para `.claude/skills/` dentro dele.
 
+> **Obs.:** Ou mais fácil, envie esse repo pro Claude e peça para ele se virar kkkkk
+
 ## Como atualizar uma skill
 
 1. Edite o `SKILL.md` neste repositório e faça commit.
