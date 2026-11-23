@@ -76,6 +76,12 @@ estilo.
 - Testes: cobrem o comportamento novo e os casos de borda? Testam
   comportamento ou detalhes de implementação?
 - Código morto, comentários desatualizados, TODOs sem dono
+- **Comentários desnecessários no código:** aponte comentários que só repetem
+  o que o código já diz (ex.: `# incrementa o contador` acima de `i += 1`),
+  comentários de seção óbvios, código comentado e explicações que deveriam
+  ser um nome melhor. Comentário só se justifica quando explica o **porquê**
+  que o código não consegue mostrar (regra de negócio, workaround, decisão
+  não óbvia).
 
 ### Cobertura anti-regressão
 Verifique se o PR cria ou altera testes que protejam o comportamento mexido:
@@ -190,6 +196,10 @@ Cada achado:
 > **Problema:** o que está acontecendo e por que isso importa neste contexto.
 > **Sugestão:** a correção concreta, com trecho de código quando ajudar.
 
+Nos trechos de código sugeridos, **não adicione comentários desnecessários**.
+Deixe só o comentário que explica um porquê importante; o resto deve ficar
+claro pelos nomes e pela estrutura.
+
 ### Pontos positivos
 Só o que for genuinamente bom e específico (ex.: "boa separação entre o caso
 de uso e o repositório em X"). Pode ficar vazio.
@@ -215,4 +225,6 @@ intenção do PR não documentada).
 - Proporcionalidade: a régua é a complexidade real do problema.
 - Convenção do projeto acima de preferência pessoal.
 - Prefira poucos achados relevantes a uma lista longa de detalhes.
+- Comentário no código só quando for importante: nunca adicione nem aprove
+  comentários que apenas descrevem o óbvio.
 - Na dúvida sobre uma intenção, pergunte no relatório em vez de presumir erro.
